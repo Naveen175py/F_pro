@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Javascript on Stroids</title>
+</head>
+<body>
+    <div class="container-1">
+        <h2>Challange 1: Your age in Days</h2>
+        <div class="flex-box-container-1">
+            <div>
+                <button class="btn btn-primary" onclick="ageInDays()">Click me</button>
+            </div>
+            <div>
+                <button class="btn btn-danger" onclick="reset()">reset</button>
+            </div>
+        </div>
+        <div class="flex-box-container-1">
+            <div id="flex-box-result"></div>
+        </div>
+    </div> 
+
+    <div class="container-2">
+        <h2>Challange 2:Image Generator</h2>
+        <button class="btn btn-success" id="cat-generator" onclick="generateCat()">Generate Image</button>
+        <div class="flex-box-container-2" id="flex-cat-gen">
+        </div>
+    </div>
+    <div class="container-3">
+        <h2>Challange 3:Rock, Paper, Scissors</h2>
+        <div class="flex-box-rps" id="flex-box-rps-div">
+            <img id= "rock"src="https://denisbook.com/views/rps-imba/rock.png" height="150" width="150" onclick="rpsGame(this)" >
+            <img id= "paper"src="https://assets.merriam-webster.com/ld/word_of_the_day/images/4250/large.jpg" height="150" width="150" onclick="rpsGame(this)"  >
+            <img src="https://thumbs.dreamstime.com/z/scissors-hand-4120615.jpg" height="150" width="150" onclick="rpsGame(this)" >
+        </div>
+    </div>
+
+    <div class="container-4">
+        <h2 id="change-my-color">challenge 4: Change the Color of All Buttons</h2>
+        <div class="flex-box-pick-color">
+            <form action="">
+                <select name="backdrop" id="background" onchange="bottonColorChange(this)">
+                    <option value="random">Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+                </select>
+            </form>
+            <button class="btn btn-primary">Wee!</button>
+            <button class="btn btn-danger">Yahoo!</button>
+            <button class="btn btn-warning">Google!</button>
+            <button class="btn btn-success">Facebook!</button>
+        </div>
+    </div>
+      
+    <script src="home.js"></script>
+    
+</body>
+</html>
